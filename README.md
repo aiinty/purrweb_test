@@ -39,5 +39,5 @@ $ docker-compose up
 
 ## DB diagram
 
-| [https://dbdiagram.io/d/purrweb_test-671f69d297a66db9a37f9303](.media/dbdiagram.png) |
+| ![https://dbdiagram.io/d/purrweb_test-671f69d297a66db9a37f9303](.media/dbdiagram.png) |
 |--------------------------------------------------------------------------------------|
