@@ -1,12 +1,10 @@
-import { Body, Controller, Delete, Get, Param, Post, Put, Req, UseGuards } from '@nestjs/common';
-import { ApiBearerAuth, ApiBody, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
+import { Body, Controller, Delete, Get, Param, Post, Put, UseGuards } from '@nestjs/common';
+import { ApiBody, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { ColumnsService } from './columns.service';
 import { CreateColumnDto } from './dto/create-column.dto';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 import { UpdateColumnDto } from './dto/update-column.dto';
 import { ColumnsGuard } from './columns.guard';
-import { Card } from '../cards/card.model';
-import { CreateCardDto } from '../cards/dto/create-card.dto';
 import { Column } from './column.model';
 
 @ApiTags('Columns')
@@ -22,7 +20,6 @@ export class ColumnsController {
   createColumn(@Body() createColumnDto: CreateColumnDto) {
     return this.columnService.createColumn(createColumnDto);
   }
-
 
   @ApiOperation({ summary: "Lookup column based on column's id" })
   @ApiResponse({ status: 200, type: Column })

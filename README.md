@@ -4,7 +4,9 @@ Trello-like RESTful Api on NestJS.
 
 ## Config
 
-Config is located at `.env`.
+Config is located at `.env`. 
+
+After the start it is necessary to create the role with value `‘user’` (defined in enum RolesValues). The role `‘user’` is given to each user after registration
 
 ## Docs
 
@@ -34,3 +36,8 @@ $ docker-compose up
 - jwt
 - bcrypt
 - Sequelize
+
+## DB diagram
+
+| [https://dbdiagram.io/d/purrweb_test-671f69d297a66db9a37f9303](.media/dbdiagram.png) |
+|--------------------------------------------------------------------------------------|

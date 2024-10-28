@@ -2,7 +2,6 @@ import { HttpException, HttpStatus, Injectable } from "@nestjs/common";
 import { CreateColumnDto } from "./dto/create-column.dto";
 import { InjectModel } from "@nestjs/sequelize";
 import { Column } from "./column.model";
-import { Action } from "../enums/action.enum";
 import { UpdateColumnDto } from "./dto/update-column.dto";
 import { Card } from '../cards/card.model';
 

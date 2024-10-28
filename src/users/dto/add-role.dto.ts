@@ -7,7 +7,7 @@ export class AddRoleDto {
   @IsString({ message: 'Should be a string' })
   @IsNotEmpty({ message: 'Shouldn\'t be empty' })
   readonly value: string;
-  @ApiProperty({ example: '1', description: 'User id', nullable: false, required: true })
+    @ApiProperty({ example: '1', description: 'User id', nullable: false, required: true })
   @IsNumber({}, { message: 'Should be a number' })
   @IsNotEmpty({ message: 'Shouldn\'t be empty' })
   readonly userId: number;
